@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import {Button} from "@/components/ui/button.tsx";
+import {Input} from "@/components/ui/input.tsx";
 
 function App() {
 
@@ -14,7 +15,7 @@ function App() {
               <div className="bg-[#131313] w-full p-4 flex border border-[#ffffff1f] basis-auto flex-col gap-2 rounded-[20px]">
                 <p className="text-[#9B9B9B] font-medium leading-6">Sell</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-[#5E5E5E] text-4xl flex-1">0</span>
+                  <Input className="placeholder:text-[#5E5E5E] text-white !text-4xl flex-1 p-0 h-auto !border-none !outline-none" placeholder="0" />
                   <div className="flex items-center justify-center h-[38px] text-white font-medium leading-[18px] rounded-full border border-[#393939] px-3">
                     ETH
                   </div>
@@ -26,7 +27,7 @@ function App() {
               <div className="bg-[#1B1B1B] w-full p-4 flex basis-auto flex-col gap-2 rounded-[20px]">
                 <p className="text-[#9B9B9B] font-medium leading-6">Sell</p>
                 <div className="flex items-center justify-between">
-                  <span className="text-[#5E5E5E] text-4xl flex-1">0</span>
+                  <Input className="placeholder:text-[#5E5E5E] bg-transparent text-white !text-4xl flex-1 p-0 h-auto !border-none !outline-none" placeholder="0" />
                   <div className="flex items-center justify-center h-[38px] text-white font-medium leading-[18px] rounded-full border border-[#393939] px-3">
                     ETH
                   </div>

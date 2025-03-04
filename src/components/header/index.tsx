@@ -1,8 +1,8 @@
 import logo from "@/assets/images/logo.svg";
 import {Command, CommandShortcut} from "@/components/ui/command.tsx";
 import { CommandInput} from "cmdk";
-import {Button} from "@/components/ui/button.tsx";
 import {Search} from "lucide-react";
+import ConnectButton from "@/components/header/ConnectButton.tsx";
 export default function Header() {
 	return (
 		<header className="fixed top-0 w-full h-[72px] py-[15px] px-3">
@@ -38,9 +38,7 @@ export default function Header() {
 					{/*	</CommandGroup>*/}
 					{/*</CommandList>*/}
 				</Command>
-				<div>
-					<Button variant="default">Connect</Button>
-				</div>
+				<ConnectButton />
 			</div>
 			
 		</header>
